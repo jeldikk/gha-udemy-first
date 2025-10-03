@@ -39,3 +39,14 @@ jobs:
         run: |
           echo I am first echo of third step
           echo I am second line of third step of single job workflow
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: First step of linting
+        run: echo Linting First step is here
+      - name: Second step of linting
+        run: echo Linting second step is here
+      - name: Third step of linting
+        run: |
+          echo I am third step of lint job
+          echo I am third step 2 of lint job
